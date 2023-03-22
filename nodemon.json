@@ -1,0 +1,8 @@
+{
+  "env": {
+    "DB_USER": "mernproject",
+    "DB_PASS": "mern1234",
+    "DB_NAME": "places",
+    "API_KEY": "AIzaSyBg5Go5qG_VcM0RCf1N9NRPOaxkwZVykMg"
+  }
+}
