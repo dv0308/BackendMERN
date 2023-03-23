@@ -51,6 +51,7 @@ const createPlace = async (req, res, next) => {
     next(new HttpError("error bruv", 401));
   }
 
+
   const { title, description, address, creator } = req.body;
   let coordinates;
   try {
@@ -79,8 +80,6 @@ const createPlace = async (req, res, next) => {
   if (!user) {
     return next(new HttpError("Cannot find user by this id", 400));
   }
-
-  console.log(user);
 
   try {
     const session = await User.startSession();
